@@ -63,7 +63,7 @@ ROOT_URLCONF = 'littlelemon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['littlelemon/templates'], # templates folder registered
+        'DIRS': ['templates'], # templates folder registered
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'littlelemon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'LittleLemon',
-        'USER': 'django',
-        'PASSWORD': 'password', # insecure, but good enough for this projects :)
+        'NAME': 'littlelemon',
+        'USER': 'root',
+        'PASSWORD': '123456', # insecure, but good enough for this projects :)
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
